@@ -1,1 +1,44 @@
+body{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 40px;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img{
+    height: 300px;
+}
+@media screen and (min-with: 1280) {  
+    body{
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+    }
+    ul li{
+        display: flex;
+        flex-direction: row;
+    }
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
+}
+@media  screen and (max-width: 1279) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+    }
 
+}
